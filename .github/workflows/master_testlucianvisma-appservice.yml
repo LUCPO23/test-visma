@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '2.1.807'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'testlucianvisma-appservice'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b551e7fdd85f48d28f5a51bfcd4e776e }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_51f8c4bb83e34cf09d99596f261578f6 }}
         package: .
